@@ -39,7 +39,7 @@ public class Strategy{
 
     public static List<PlayerAction> decide(GameState gameState){
         fetchBases(gameState.getBases());
-        gameState.getBases().get(0);
+
         List<PlayerAction> playerAction = new ArrayList<>();
         playerAction.add(new PlayerAction(0, 0, 0));
         return playerAction;

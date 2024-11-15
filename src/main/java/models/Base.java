@@ -65,4 +65,8 @@ public class Base{
     public void setUnitsUntilUpgrade(int unitsUntilUpgrade) {
         this.unitsUntilUpgrade = unitsUntilUpgrade;
     }
+
+    public int getSpawnRate(GameState state) {
+        return state.getConfig().getBaseLevels().get(this.level - 1).spawnRate;
+    }
 }
