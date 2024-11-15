@@ -9,4 +9,20 @@ public class PathConfig{
         this.gracePeriod = gracePeriod;
         this.deathRate = deathRate;
     }
+
+    public int getGracePeriod() {
+        return gracePeriod;
+    }
+
+    public void setGracePeriod(int gracePeriod) {
+        this.gracePeriod = gracePeriod;
+    }
+
+    public int getDeathRate() {
+        return deathRate;
+    }
+
+    public void setDeathRate(int deathRate) {
+        this.deathRate = deathRate;
+    }
 }

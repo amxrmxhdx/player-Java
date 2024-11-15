@@ -17,4 +17,52 @@ public class Base{
         this.level = level;
         this.unitsUntilUpgrade = unitsUntilUpgrade;
     }
+
+    public Position getPosition() {
+        return position;
+    }
+
+    public void setPosition(Position position) {
+        this.position = position;
+    }
+
+    public int getUid() {
+        return uid;
+    }
+
+    public void setUid(int uid) {
+        this.uid = uid;
+    }
+
+    public int getPlayer() {
+        return player;
+    }
+
+    public void setPlayer(int player) {
+        this.player = player;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+    public void setPopulation(int population) {
+        this.population = population;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
+    }
+
+    public int getUnitsUntilUpgrade() {
+        return unitsUntilUpgrade;
+    }
+
+    public void setUnitsUntilUpgrade(int unitsUntilUpgrade) {
+        this.unitsUntilUpgrade = unitsUntilUpgrade;
+    }
 }

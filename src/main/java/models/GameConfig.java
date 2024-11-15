@@ -12,4 +12,21 @@ public class GameConfig{
         this.baseLevels = baseLevels;
         this.paths = paths;
     }
+
+    public List<BaseLevel> getBaseLevels() {
+        return this.baseLevels;
+    }
+
+    public void setBaseLevels(List<BaseLevel> list) {
+        this.baseLevels = list;
+    }
+
+    public PathConfig getPaths() {
+        return paths;
+    }
+
+    public void setPaths(PathConfig paths) {
+        this.paths = paths;
+    }
+
 }
