@@ -1,5 +1,9 @@
 package utils;
 
+import logic.Strategy;
+import models.Base;
+import models.BoardAction;
+import models.GameState;
 import models.Position;
 
 public class Methods {
@@ -10,6 +14,9 @@ public class Methods {
         double zM = Math.pow(b.z - a.z, 2);
         double d = Math.sqrt(xM + yM + zM);
         return (int) Math.round(d);
+    }
+    public static int BitsiInTurns(Base base, int zeit, GameState gameState){
+        return base.getPopulation() + (base.getSpawnRate(gameState) * zeit);
     }
 
 }
