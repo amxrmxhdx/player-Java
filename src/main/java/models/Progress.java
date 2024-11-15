@@ -10,6 +10,22 @@ public class Progress{
         this.traveled = traveled;
     }
 
+    public int getDistance() {
+        return distance;
+    }
+
+    public void setDistance(int distance) {
+        this.distance = distance;
+    }
+
+    public int getTraveled() {
+        return traveled;
+    }
+
+    public void setTraveled(int traveled) {
+        this.traveled = traveled;
+    }
+
     public int getDistanceLeft(){
         return distance - traveled;
     }
