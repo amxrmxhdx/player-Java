@@ -13,6 +13,8 @@ public class Strategy{
 
     public static Map<Integer, Base> baseById = null;
 
+    public static Integer powerHouse = null;
+
     public static void fetchBases(List<Base> bases) {
         baseById = new HashMap<>();
         for (Base b : bases)
@@ -39,6 +41,7 @@ public class Strategy{
 
     public static List<PlayerAction> decide(GameState gameState){
         fetchBases(gameState.getBases());
+        if (powerHouse == null) powerHouse = getBasesByPlayer(gameState.getGame().getPlayer()).get(0).getUid();
 
         List<PlayerAction> playerAction = new ArrayList<>();
         playerAction.add(new PlayerAction(0, 0, 0));
