@@ -69,4 +69,8 @@ public class Base{
     public int getSpawnRate(GameState state) {
         return state.getConfig().getBaseLevels().get(this.level - 1).spawnRate;
     }
+
+    public int getMaxPopulation(GameState state) {
+        return state.getConfig().getBaseLevels().get(this.level - 1).maxPopulation;
+    }
 }
