@@ -15,7 +15,7 @@ public class Methods {
         double d = Math.sqrt(xM + yM + zM);
         return (int) Math.round(d);
     }
-    public static int BitsiInTurns(Base base, int zeit, GameState gameState){
+    public static int BitsInTurns(Base base, int zeit, GameState gameState){
         return base.getPopulation() + (base.getSpawnRate(gameState) * zeit);
     }
 
